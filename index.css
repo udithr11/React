@@ -1,0 +1,56 @@
+.title{
+    display: flex;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    border:1px solid rgb(7, 7, 7);
+    
+}
+
+
+
+.logo {
+    width:100px;
+    border-radius: 2ex;
+    margin:3px;
+}
+
+
+.nav-items > ul{
+    display:flex;
+    list-style-type: none;
+}
+
+.nav-items > ul >li{
+    padding:10px;
+    font-size :1.5em;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 15%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .card img {
+    /* Use correct property name and adjust styling based on your requirements */
+    width: 90%; /* Adjust the width as needed */
+    margin-bottom: 10px; /* Add margin between images */
+  }
+
+  .restrauntList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Use 100% width to fill the screen */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }

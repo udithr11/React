@@ -1,12 +1,35 @@
 {
-  "name": "classtwo",
+  "name": "react",
   "version": "1.0.0",
-  "description": "",
+  "description": "online course",
   "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel reactSecondProgram.html",
+    "build": "parcel build reactSecondProgram.html",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udithr11/React.git"
+  },
+  "author": "udith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udithr11/React/issues"
+  },
+  "homepage": "https://github.com/udithr11/React#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "cors-anywhere": "^0.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
