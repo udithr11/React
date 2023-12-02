@@ -1,4 +1,6 @@
-import {useState} from "react"
+import {useState} from "react";
+import {Link} from "react-router-dom";
+
 
 
 
@@ -40,9 +42,17 @@ export const Title = function () {
         </button> 
         <div className="nav-items">
           <ul>
+            <Link to="/">
             <li className="home">Home</li>
-            <li className="about">About</li>
+            </Link>
+            
+            <Link to="/about">
+              <li className="about">About</li>
+              </Link>
+            
+            <Link to="/contact">
             <li className="contact">Contact</li>
+            </Link>
             <li className="cart">Cart</li>
           </ul>
          

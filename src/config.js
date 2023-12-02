@@ -54,6 +54,7 @@ const restrauntList=[
 
 ]
 
-export default restrauntList;
+const imageUrl="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 
-cloudinaryImageId:"rapy3ovwlb9rp5udsvcr"
+export default imageUrl;
+

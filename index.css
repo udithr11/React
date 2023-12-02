@@ -42,15 +42,29 @@
   }
   
   .card img {
-    /* Use correct property name and adjust styling based on your requirements */
-    width: 90%; /* Adjust the width as needed */
-    margin-bottom: 10px; /* Add margin between images */
+    width: 95%; 
+    margin-bottom: 10px; 
   }
 
   .restrauntList {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%; /* Use 100% width to fill the screen */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+
+.shimmer-card {
+    width: 350px; 
+    height: 550px; 
+    margin: 10px;
+    background: linear-gradient(to right, #f6f7f8 4%, #edeef1 25%, #f6f7f8 36%);
+  }
+  
+  .shimmer-restaurant{
+    width: 660px;
+    height:780px;
+    margin: 10px;
+    background: linear-gradient(to right, #f6f7f8 4%, #edeef1 25%, #f6f7f8 36%);
+
   }
