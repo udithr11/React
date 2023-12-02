@@ -10,6 +10,7 @@ import Error from "./components/error";
 import Contact from "./components/contact";
 import { createBrowserRouter ,RouterProvider ,Outlet} from "react-router-dom";
 import RestaurantMenu from "./components/restaurantMenu";
+import LoginForm from "./components/login";
 
 
 
@@ -48,6 +49,10 @@ const appRouter= createBrowserRouter([
         path:'restaurant/:id',
         // dynamaic routhing
         element:<RestaurantMenu/>
+      },
+      {
+        path:'/login',
+        element:<LoginForm/>
       }
 
     ]

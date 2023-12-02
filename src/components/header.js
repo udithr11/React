@@ -57,9 +57,12 @@ export const Title = function () {
           </ul>
          
         </div>
-        {isLoggedIn?<button onClick={()=>setIsLoggedIn(false)}>logout</button>
-          :<button onClick={()=>setIsLoggedIn(true)}>login</button>
+        
+        {isLoggedIn?<Link to="/login"><button onClick={()=>setIsLoggedIn(false)}>login</button></Link>
+          :<Link to="/"><button onClick={()=>setIsLoggedIn(true)}>logout</button></Link>
           }
+        
+        
       </div>
     );
   };

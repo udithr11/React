@@ -6,17 +6,22 @@ import {Link} from "react-router-dom";
 const RestrauntCard = ({ cloudinaryImageId, name, cuisines, avgRating, id }) => {
   // we can also give const RestrauntCard=({restraunt})  this is destructuring the parameter on the go
   return (
-    <div className="card">
-      <img
-        src={
-          imageUrl +cloudinaryImageId
-        }
-      />
-      <h2>{name}</h2>
-      <h3>{cuisines.join(" , ")}</h3>
-      <h4>{avgRating} Stars</h4>
-      <h4>Id= {id}</h4>
-    </div>
+    <Link to={"/restaurant/"+id} style={{ textDecoration: 'none', width: '18%', margin: '10px' }}>
+      <div className="card">
+        <img
+          src={
+            imageUrl +cloudinaryImageId
+          }
+        />
+        <h2>{name}</h2>
+        <div>
+        <h3>{cuisines.join(" , ")}</h3>
+        <h4>{avgRating} Stars</h4>
+        {/* <h4>Id= {id}</h4> */}
+        </div>
+        
+      </div>
+    </Link>
   );
 };
 
@@ -95,13 +100,13 @@ const Body = function () {
           filteredRestaurants.map((restaurant) => {
             return(
             
-            <Link to= { "/restaurant/"+ restaurant.info.id} 
-            key={restaurant.info.id} 
-            style={{ textDecoration: 'none' }}>
-              <RestrauntCard {...restaurant.info} />
-              </Link>
+            // <Link to= { "/restaurant/"+ restaurant.info.id} 
+            // key={restaurant.info.id} 
+            // style={{ textDecoration: 'none' ,width: '15%', margin: '10px'}}>
+            //   <RestrauntCard {...restaurant.info} />
+            //   </Link>
             
-            // <RestrauntCard {...restaurant.info} key={restaurant.info.id} />
+             <RestrauntCard {...restaurant.info} key={restaurant.info.id} />
           )})
         )}
       </div>

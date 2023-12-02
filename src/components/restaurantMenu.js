@@ -20,13 +20,19 @@ const RestaurantMenu = () => {
 
     }
   return (!restaurant)?<ShimmerRestaurant/>:(
-    <div>
-        <h1>id={restaurant.id}</h1>
-        <h1> {restaurant.name}</h1>
+    <div className="hotel">
+        <div className='hotel-img-name'>
+        {/* <h1>id={restaurant.id}</h1> */}
+        <h1 style={{textDecoration : 'underline'}}> {restaurant.name}</h1>
         <img src={imageUrl+restaurant.cloudinaryImageId}/>
-        <h1> {restaurant.avgRating}</h1>
-        <h1>{restaurant?.cuisines?.join(" , ")} CUISINES </h1> 
-        <h1> {restaurant?.costForTwoMessage} </h1>
+        </div>
+        <div className="hotel-other"><h1>Rating: {restaurant.avgRating}</h1> 
+        
+        <h1>CUISINES: {restaurant?.cuisines?.join(" , ")}  </h1>
+         
+        <h1> {restaurant?.costForTwoMessage} </h1></div>
+        
+        
     </div>
   )
 }
